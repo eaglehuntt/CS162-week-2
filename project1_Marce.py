@@ -106,6 +106,7 @@ if __name__ == "__main__":
     print("##### Program Start #####")
     exit_program = False
     user_input = None
+    
 
     while not exit_program:
         print("\nEnter one of the listed numbers to use that function:")
