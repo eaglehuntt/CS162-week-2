@@ -1,0 +1,26 @@
+how do you think you would add file reading and writing functionality to your first week's project in this class?
+
+I could have different pokemon teams stored as a text file. Then initialize a player object with the info from the text file.
+
+how do you think the try and except clauses of Python work (based on your current understanding or a quick Internet search) and what the FileNotFoundError class is?
+
+Try and except are keywords in python that allow a developer catch errors gracefully. Badically, it allows the program to attempt to run a block of code and if there is an error, it will catch it and execute the code in the except block.
+
+FileNotFoundError occurs when attempting to open a file, but the program cannot find it.
+
+identify sections of your code that you could use to create functions or methods out of:
+
+All of my code in last week's assignment was either a function or class.
+
+design tests that would show your program working correctly (positive tests and negative tests):
+
+positive tests:
+- Are the pokemon's stats correctly calculated? As in, are the pokemon objects the class creates legal in real pokemon games? This can be tested by going to https://pycosites.com/pkmn/stat.php and typing in the info that is printed in the driver file.
+- Check to see if a pokemon object is created correctly
+- Check if pokemon nature is accurate
+
+
+negative tests:
+
+- test invalid pokemon number
+- test invalid nature
