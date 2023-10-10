@@ -98,25 +98,20 @@ def load_character(filename):
         print(f"File '{filename}' not found.")
     except Exception as e:
         print(f"Error loading character: {e}")
-letmesoloher = Character(new_playername="Let Me Solo Her", new_level=179, new_weapon_right="uchigatana", new_weapon_left="Rivers of Blood", new_helm="Jar",new_vigor=40, new_mind=24, new_endurance=40, new_strength=38, new_dexterity=48, new_intelligence=28, new_faith=22, new_arcane=20 )
-default = Character()
-
 
 if __name__ == "__main__":
     print("##### Program Start #####")
     exit_program = False
     user_input = None
-    
+
 
     while not exit_program:
         print("\nEnter one of the listed numbers to use that function:")
         print("\nEnter one of the listed numbers to use that function:")
         print("0 - Enter your own stats")
-        print("1 - View default stats")
-        print("2 - View preset")
-        print("3 - Print your character stats")
-        print("4 - Save character to file")
-        print("5 - Load character from file")
+        print("1 - Print your character stats")
+        print("2 - Save character to file")
+        print("3 - Load character from file")
         print("Type 'exit' to close the program")
 
         menu_input = input("Enter your choice: ")
@@ -135,22 +130,18 @@ if __name__ == "__main__":
                 new_arcane=int(input("Arcane: ")),
             )
         elif menu_input == "1":
-            print(default)
-        elif menu_input == "2":
-            print(letmesoloher)
-        elif menu_input == "3":
             try:
                 print(user_input)
             except:
                 print("You must enter character stats first")
-        elif menu_input == "4":
+        elif menu_input == "2":
             if user_input:
                 save_filename = input("Enter the filename to save your character: ")
                 save_filename += ".txt"
                 save_character(user_input, save_filename)
             else:
                 print("You must create a character first.")
-        elif menu_input == "5":
+        elif menu_input == "3":
             load_filename = input("Enter the filename to load your character: ")
             load_filename += ".txt"
             user_input = load_character(load_filename)
